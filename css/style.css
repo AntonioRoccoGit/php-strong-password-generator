@@ -1,0 +1,15 @@
+body {
+    background-color: #021e47;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.header h2 {
+    color: white;
+}
