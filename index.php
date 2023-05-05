@@ -1,23 +1,9 @@
 <?php
-$lower_case_array = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-$upper_case_array = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-$number_array = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-$symbol_array = ['@', '#', '/', '*', '?', '&', '$', '!', '^', '+', ':', ';', '<', '>', '%'];
+include_once __DIR__ . "/partials/data.php";
 
-$user_password = "";
+include_once __DIR__ . "/partials/functions.php";
 
-if (isset($_GET['password-length'])) {
-    $length = $_GET['password-length'];
 
-    // genero l'array completo di elementi  
-    $new_array = array_merge($lower_case_array, $upper_case_array, $number_array, $symbol_array);
-
-    for ($i = 0; $i < $length; $i++) {
-
-        $random_index = rand(0, (count($new_array) - 1));
-        $user_password = $user_password . $new_array[$random_index];
-    }
-}
 ?>
 
 <!DOCTYPE html>
@@ -60,8 +46,9 @@ if (isset($_GET['password-length'])) {
 
             <button type="submit" class="btn btn-success">Genera password</button>
         </form>
-        <h2 class="user-password">La tua super password è:<br><?php echo $user_password ?></h2>
     </div>
 </body>
+<?php
+?>
 
 </html>
