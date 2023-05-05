@@ -13,3 +13,19 @@ body {
 .header h2 {
     color: white;
 }
+
+.ms_form {
+    padding: 3rem;
+    color: black;
+    background-color: white;
+}
+
+.ms_row {
+    border: 1px solid black;
+}
+
+.user-password {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
