@@ -42,6 +42,56 @@ include_once __DIR__ . "/partials/functions.php";
                 </div>
                 <!-- /HANDLE PASSWORD LENGTH -->
 
+                <!-- HANDLE REPETITION -->
+                <div class="row mb-3 p-2 ms_row">
+                    <div class="col-8">
+                        <span class="col-form-label">Consenti ripetizioni di uno o più caratteri</span>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check">
+                            <input class="form-check-input" checked type="radio" value="true" name="want-repeat" id="want-repeat1">
+                            <label class="form-check-label" for="want-repeat1">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="false" name="want-repeat" id="want-repeat2">
+                            <label class="form-check-label" for="is-uppercase2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- /HANDLE REPETITION -->
+
+                <!-- HANDLE CHARACTERS -->
+                <div class="row mb-3 p-2 ms_row">
+                    <div class="col-8">
+                        <!-- layaout -->
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="true" name="want-letter" id="want-letter" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Lettere
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" name="want-number" id="want-number" checked>
+                            <label class="form-check-label" for="want-number">
+                                Numeri
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" name="want-symbol" id="want-symbol" checked>
+                            <label class="form-check-label" for="want-symbol">
+                                Simboli
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- /HANDLE CHARACTERS -->
+
             </div>
 
             <button type="submit" class="btn btn-success">Genera password</button>
